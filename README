@@ -1,0 +1,25 @@
+A simple color picker
+======================
+
+* Requirement
+Java 5 or greater.
+
+* How to launch? 
+Click picker.jar file in your Finder. 
+Or, use the following commands,
+ $ java -jar picker.jar 
+
+* How to open a image file?
+Just drag and drop your image file into the frame which have a label named 'Drop here'.
+
+* How to close a image frame?
+Cmd-W
+
+* How to copy a color value?
+Click the mouse, and the picker would copy the hexa value (#f0f0f0) 
+into your clipboard. 
+
+* How to zoom in/zoom out?
+Rotate your mouse wheel. 
+
+Enjoy! 

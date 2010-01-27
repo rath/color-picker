@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="asd" default="build">
+
+    <property name="src" value="src"/>
+    <property name="build" value="bin"/>
+	<property name="jar" value="picker.jar"/>
+
+    <target name="compile">
+        <mkdir dir="${build}" />
+        <javac srcdir="${src}" destdir="${build}"
+            debug="yes"
+            source="1.5"
+            target="1.5"
+            encoding="UTF-8">
+        </javac>
+    </target>
+
+    <target name="build" depends="compile">
+        <jar destfile="${jar}" basedir="${build}" 
+			manifest="${src}/Manifest.mf" 
+			compress="yes" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+		<delete file="${jar}" />
+    </target>
+
+</project>
